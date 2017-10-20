@@ -1,0 +1,103 @@
+body {
+	 font: 0.8em Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
+	 background: #09050f; /* Цвет фона */
+	 color: #0c050f; /* Цвет текста */
+	}
+	a { color: #008BCE; /* Цвет ссылок */ }
+	#container {
+	 width: 1250px; /* Ширина макета */
+	 margin: 0 10px;/* Выравниваем по центру */
+	 background: #26240b; /* Цвет колонок */
+	 height: 700px;
+	}
+	#header {
+	 font-size: 2.2em; /* Размер текста */
+	 text-align: center; /* Выравнивание по центру */
+	 padding: 20px; /* Отступы вокруг текста */
+	 background: #8a172f; /* Цвет фона шапки */
+	}
+
+	.verticalaccordion>ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+   	width: 500px;
+
+}
+.verticalaccordion>ul>li {
+    display:block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    height:40px;
+    width: 500px;
+    /* Decorative CSS */
+    background-color:#f0f0f0;
+    /* CSS3 Transition Effect */
+    transition: height 0.3s ease-in-out;
+    -moz-transition: height 0.3s ease-in-out;
+    -webkit-transition: height 0.3s ease-in-out;
+    -o-transition: height 0.3s ease-in-out;
+}
+.verticalaccordion>ul>li>h3 {
+    display:block;
+    margin: 0;
+    padding:10px;
+    height:19px;
+    /* Decorative CSS */
+    border-top:#f0f0f0 1px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    text-transform:uppercase;
+    color: #000;
+    background: #cccccc;
+    /* CSS3 Gradient Effect */
+    background: -moz-linear-gradient( top, #999999, #cccccc);
+    background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#cccccc));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff999999, endColorstr=#ffcccccc); /* IE 7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff999999, endColorstr=#ffcccccc)";   /* IE 8 */
+}
+.verticalaccordion>ul>li>div {
+    margin:0;
+    overflow: auto;
+    padding:10px;
+    height:220px;
+}
+.verticalaccordion>ul>li:hover {
+    height: 280px;
+}
+.verticalaccordion:hover>ul>li:hover>h3 {
+    /* Decorative CSS */
+    color:#fff;
+    background: #000000;
+    /* CSS3 Gradient Effect */
+    background: -moz-linear-gradient( top, #454545, #000000); /* FF, Flock */
+    background: -webkit-gradient(linear, left top, left bottom, from(#454545), to(#000000)); /* Safari, Chrome */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff454545, endColorstr=#ff000000); /* IE 5.5 - IE 7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff454545, endColorstr=#ff000000)";   /* IE 8 */
+}
+.verticalaccordion>ul>li>h3:hover {
+    cursor:pointer;
+}
+
+
+
+
+	#nav, #aside {
+	 float: left; width: 110px; padding: 45px;
+	}
+	#content {
+	 background: #e1e0f7;
+	 margin: 0 220px; /* Ширина колонок */
+	 padding: 170px;
+	}
+	#aside {
+	 float: right; color: #fffafe;
+	}
+	h2 { margin: 0 0 1em; }
+	#footer {
+	 clear: both; /* Отменяем действие float */
+	 padding: 20px; /* Отступы вокруг текста */
+	 background: #8a172f; /* Цвет фона подвала */
+	}
